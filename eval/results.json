@@ -1,0 +1,56 @@
+{
+  "results": [
+    {
+      "strategy": "recursive",
+      "size": 1000,
+      "overlap": 150,
+      "chunks": 5114,
+      "build_time_s": 878.03,
+      "items": 40,
+      "hit@1": 0.775,
+      "hit@k": 0.875,
+      "mrr": 0.825,
+      "avg_latency_s": 0.061,
+      "wall_time_s": 2.43
+    },
+    {
+      "strategy": "tokens",
+      "size": 384,
+      "overlap": 64,
+      "chunks": 3532,
+      "build_time_s": 882.62,
+      "items": 40,
+      "hit@1": 0.75,
+      "hit@k": 0.875,
+      "mrr": 0.79,
+      "avg_latency_s": 0.07,
+      "wall_time_s": 2.8
+    },
+    {
+      "strategy": "sentences",
+      "size": 1200,
+      "overlap": 150,
+      "chunks": 4045,
+      "build_time_s": 697.88,
+      "items": 40,
+      "hit@1": 0.775,
+      "hit@k": 0.875,
+      "mrr": 0.819,
+      "avg_latency_s": 0.055,
+      "wall_time_s": 2.21
+    },
+    {
+      "strategy": "markdown",
+      "size": 1600,
+      "overlap": 200,
+      "chunks": 3623,
+      "build_time_s": 803.14,
+      "items": 40,
+      "hit@1": 0.7,
+      "hit@k": 0.8,
+      "mrr": 0.746,
+      "avg_latency_s": 0.052,
+      "wall_time_s": 2.08
+    }
+  ]
+}

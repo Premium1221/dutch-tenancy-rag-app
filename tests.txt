@@ -1,0 +1,123 @@
+tests:
+
+(.venv) PS D:\Generative AI\dutch-tenancy-rag-app> python main.py --ask "What is the maximum rent increase allowed?"
+>>
+
+=== Answer ===
+
+The maximum rent increase allowed until 1 May 2029 is determined by the greater of inflation + 1% or wage development + 1% (if wage development is lower than inflation). In 2023, the maximum rent increase was 4.1% (3.1% wage development + 1%), and in 2024, it is set at 5.5% (4.5% inflation + 1%).
+
+Sources:
+- data\government_portal\government_nl\www.government.nl\topics\housing\rented-housing.md
+- data\government_portal\www.government.nl\topics\housing\rented-housing.md
+- data\associations\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf p.51
+- data\associations\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf p.51
+
+=== Retrieved sources ===
+{'source': 'data\\government_portal\\government_nl\\www.government.nl\\topics\\housing\\rented-housing.md', 'page': None}
+{'source': 'data\\government_portal\\www.government.nl\\topics\\housing\\rented-housing.md', 'page': None}
+{'source': 'data\\associations\\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf', 'page': 50}
+{'source': 'data\\associations\\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf', 'page': 50}
+
+
+
+.venv) PS D:\Generative AI\dutch-tenancy-rag-app> python main.py --ask "Can my landlord enter my apartment without permission?"
+>>
+
+=== Answer ===
+
+No, your landlord cannot enter your apartment without your permission, except in emergencies where immediate repairs are needed.
+
+Sources:
+- data\associations\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf p.26
+- data\government_portal\Wet+goed+verhuurderschap+huurder+ENGELS.pdf p.5
+
+=== Retrieved sources ===
+{'source': 'data\\associations\\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf', 'page': 25}
+{'source': 'data\\associations\\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf', 'page': 66}
+{'source': 'data\\government_portal\\Wet+goed+verhuurderschap+huurder+ENGELS.pdf', 'page': 1}
+{'source': 'data\\government_portal\\Wet+goed+verhuurderschap+huurder+ENGELS.pdf', 'page': 4}
+(.venv) PS D:\Generative AI\dutch-tenancy-rag-app> python main.py --ask "How much notice is required for rent termination?"
+>>
+
+=== Answer ===
+
+The notice period required for rent termination varies based on who is terminating the contract:
+
+- **Tenant**: The notice period is equal to the payment term, with a minimum of one month and a maximum of three months.
+- **Landlord**: The notice period is at least three months, which can increase by one month for each year the tenant has rented the property, up to a maximum of six months.
+
+Sources:
+- data\associations\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf p.39
+- data\associations\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf p.90
+- data\associations\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf p.30
+- data\associations\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf p.36
+
+=== Retrieved sources ===
+{'source': 'data\\associations\\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf', 'page': 38}
+{'source': 'data\\associations\\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf', 'page': 89}
+{'source': 'data\\associations\\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf', 'page': 29}
+{'source': 'data\\associations\\Tenancy-law-how-does-it-work-Dutch-Student-Union-LSVb.pdf', 'page': 35}
+(.venv) PS D:\Generative AI\dutch-tenancy-rag-app> 
+
+
+
+(.venv) PS D:\Generative AI\dutch-tenancy-rag-app> python main.py --ask "Wat is de maximale huurverhoging?"
+>>
+
+=== Answer ===
+
+De maximale huurverhoging in 2023 voor vrijesectorwoningen is 4,1%. Voor 2025 is de maximale huurverhoging voor middenhuurwoningen 7,7% en voor vrijesectorwoningen 4,1%.
+
+Bronnen:
+- [source: data\government_portal\rijksoverheid\www.rijksoverheid.nl\onderwerpen\woning-huren\nieuws\2024\12\17\maximale-huurverhoging-vanaf-1-januari-2025-41-procent-voor-vrije-sector-en-77-procent-voor-middenhuur.md]      
+- [source: data\government_portal\rijksoverheid\www.rijksoverheid.nl\onderwerpen\woning-huren\vraag-en-antwoord\wat-is-de-maximale-huurverhoging-in-2023.md]
+- [source: data\government_portal\www.rijksoverheid.nl\onderwerpen\woning-huren\vraag-en-antwoord\wat-is-de-maximale-huurverhoging-in-2025.md]
+
+=== Retrieved sources ===
+{'source': 'data\\government_portal\\rijksoverheid\\www.rijksoverheid.nl\\onderwerpen\\woning-huren\\nieuws\\2024\\12\\17\\maximale-huurverhoging-vanaf-1-januari-2025-41-procent-voor-vrije-sector-en-77-procent-voor-middenhuur.md', 'page': None}
+{'source': 'data\\government_portal\\rijksoverheid\\www.rijksoverheid.nl\\onderwerpen\\woning-huren\\vraag-en-antwoord\\wat-is-de-maximale-huurverhoging-in-2023.md', 'page': None}
+{'source': 'data\\rent_tribunal\\www.huurcommissie.nl\\policy_books\\Beleidsboek+Huurverhoging+en+huurverlaging.pdf', 'page': 43}
+{'source': 'data\\government_portal\\www.rijksoverheid.nl\\onderwerpen\\woning-huren\\vraag-en-antwoord\\wat-is-de-maximale-huurverhoging-in-2025.md', 'page': None}
+(.venv) PS D:\Generative AI\dutch-tenancy-rag-app> python main.py --ask "Mag mijn verhuurder zonder toestemming mijn woning betreden?"
+>>
+
+=== Answer ===
+
+Nee, uw verhuurder mag de woning alleen met toestemming van u betreden. Er zijn enkele uitzonderingen, zoals in geval van een dringende noodsituatie.
+
+Sources:
+- data\government_portal\Wet+goed+verhuurderschap+NEDERLANDS.pdf p.2
+- data\government_portal\rijksoverheid\www.rijksoverheid.nl\onderwerpen\woning-huren\vraag-en-antwoord\nieuwe-regels-voor-verhuurders-en-verhuurbemiddelaars-1-juli-2023.md
+- data\government_portal\rijksoverheid\www.rijksoverheid.nl\onderwerpen\woning-huren\vraag-en-antwoord.md
+- data\government_portal\www.rijksoverheid.nl\onderwerpen\woning-huren\vraag-en-antwoord.md
+
+=== Retrieved sources ===
+{'source': 'data\\government_portal\\Wet+goed+verhuurderschap+NEDERLANDS.pdf', 'page': 1}
+{'source': 'data\\government_portal\\rijksoverheid\\www.rijksoverheid.nl\\onderwerpen\\woning-huren\\vraag-en-antwoord\\nieuwe-regels-voor-verhuurders-en-verhuurbemiddelaars-1-juli-2023.md', 'page': None}
+{'source': 'data\\government_portal\\rijksoverheid\\www.rijksoverheid.nl\\onderwerpen\\woning-huren\\vraag-en-antwoord.md', 'page': None}
+{'source': 'data\\government_portal\\www.rijksoverheid.nl\\onderwerpen\\woning-huren\\vraag-en-antwoord.md', 'page': None}
+(.venv) PS D:\Generative AI\dutch-tenancy-rag-app> python main.py --ask "Hoeveel opzegtermijn is er nodig voor huurbeëindiging?"
+>>
+
+=== Answer ===
+
+De opzegtermijn voor huurbeëindiging is als volgt:
+
+- Voor verhuurders is de opzegtermijn minimaal 3 maanden.
+- Voor huurders is de opzegtermijn meestal 1 maand, maximaal 3 maanden.
+- Bij een tijdelijk huurcontract is de opzegtermijn minimaal 1 maand als de huurder eerder wil opzeggen.
+- Voor een vast huurcontract is de opzegtermijn 3 tot 6 maanden, afhankelijk van de duur van het verblijf van de huurder.
+
+Bronnen:
+- [source: data\government_portal\rijksoverheid\www.rijksoverheid.nl\onderwerpen\woning-huren\vraag-en-antwoord\wat-moet-ik-weten-als-ik-een-hospitakamer-wil-verhuren.md]
+- [source: data\government_portal\rijksoverheid\www.rijksoverheid.nl\onderwerpen\woning-huren\vraag-en-antwoord\verhuurder-zegt-huur-op-woning.md]
+- [source: data\government_portal\rijksoverheid\www.rijksoverheid.nl\onderwerpen\woning-huren\vraag-en-antwoord\welke-regels-gelden-als-ik-een-woning-aan-een-bepaalde-doelgroep-verhuur.md]
+- [source: data\laws\BWBR0005290_Boek7-geldend_van_18-07-2025_tm_heden_zichtdatum_20-10-2025.txt]
+
+=== Retrieved sources ===
+{'source': 'data\\government_portal\\rijksoverheid\\www.rijksoverheid.nl\\onderwerpen\\woning-huren\\vraag-en-antwoord\\wat-moet-ik-weten-als-ik-een-hospitakamer-wil-verhuren.md', 'page': None}
+{'source': 'data\\government_portal\\rijksoverheid\\www.rijksoverheid.nl\\onderwerpen\\woning-huren\\vraag-en-antwoord\\verhuurder-zegt-huur-op-woning.md', 'page': None}
+{'source': 'data\\government_portal\\rijksoverheid\\www.rijksoverheid.nl\\onderwerpen\\woning-huren\\vraag-en-antwoord\\welke-regels-gelden-als-ik-een-woning-aan-een-bepaalde-doelgroep-verhuur.md', 'page': None}
+{'source': 'data\\laws\\BWBR0005290_Boek7-geldend_van_18-07-2025_tm_heden_zichtdatum_20-10-2025.txt', 'page': None}
+(.venv) PS D:\Generative AI\dutch-tenancy-rag-app> 

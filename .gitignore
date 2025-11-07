@@ -1,0 +1,33 @@
+# Bytecode / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local environment + secrets
+.env
+.env.*
+!.env.example
+
+# Tooling / editors
+.vscode/
+.idea/
+
+# Data + generated artifacts
+data/
+index/
+*.tmp
+*.log
+
+# Notebooks + checkpoints
+.ipynb_checkpoints/
+
+# OS cruft
+.DS_Store
+Thumbs.db
