@@ -49,7 +49,6 @@ copy .env.example .env  # or `cp` on macOS/Linux
 # Fill in GROQ_API_KEY / OPENAI_API_KEY and adjust overrides as needed
 ```
 
-> ⚠️ Never commit `.env` or other secrets. Rotate any keys that may have been exposed before pushing to GitHub.
 
 ## Data & index locations
 - Place source documents under `data/` (e.g., `data/laws/boek7/...pdf`, `data/government_portal/*.md`). This folder is git-ignored so you can keep proprietary material locally.
